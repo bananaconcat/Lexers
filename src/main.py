@@ -22,6 +22,7 @@ TOKEN_GREATER = 20
 TOKEN_GREATER_EQUAL = 21
 TOKEN_AND = 22
 TOKEN_STRING = 23
+TOKEN_HASHTAG = 24
 
 TOKENS = {
 	0: "TOKEN_ILLEGAL",
@@ -47,7 +48,8 @@ TOKENS = {
 	20: "TOKEN_GREATER",
 	21: "TOKEN_GREATER_EQUAL",
 	22: "TOKEN_AND",
-	23: "TOKEN_STRING"
+	23: "TOKEN_STRING",
+	24: "TOKEN_HASHTAG"
 }
 
 MAX_LEN = 256
@@ -106,23 +108,23 @@ class Lexer:
 				self.tokens.append(Token(TOKEN_COMMA, None))
 			elif c == ".":
 				self.tokens.append(Token(TOKEN_DOT, None))
-			elif c == "!":
-				self.tokens.append(Token(TOKEN_BANG, None))
 			elif c == "!" and nc == "=":
 				self.tokens.append(Token(TOKEN_BANG_EQUAL, None))
 				i += 1
-			elif c == "<":
-				self.tokens.append(Token(TOKEN_LESS, None))
-				i += 1
+			elif c == "!":
+				self.tokens.append(Token(TOKEN_BANG, None))
 			elif c == "<" and nc == "=":
 				self.tokens.append(Token(TOKEN_LESS_EQUAL, None))
 				i += 1
-			elif c == ">":
-				self.tokens.append(Token(TOKEN_GREATER, None))
-				i += 1
+			elif c == "<":
+				self.tokens.append(Token(TOKEN_LESS, None))
 			elif c == ">" and nc == "=":
 				self.tokens.append(Token(TOKEN_GREATER_EQUAL, None))
 				i += 1
+			elif c == ">":
+				self.tokens.append(Token(TOKEN_GREATER, None))
+			elif c == "#":
+				self.tokens.append(Token(TOKEN_HASHTAG, None))
 			elif c == "&" and nc == "&":
 				self.tokens.append(Token(TOKEN_AND, None))
 				i += 1
