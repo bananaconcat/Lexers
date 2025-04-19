@@ -8,3 +8,11 @@ Created the Lexer in 8 hours.
 
 Fixed 3 critical bugs in the Lexer.
 
+# Error Codes
+
+|Code|Type|Info|
+| --- | --- | --- |
+|E001|Compiler|Example error, might be used for testing
+|E002|Compiler|Unimplemented token found
+|AE00|Alpha|Example alpha error, used for previewing
+|DE00|Depricated|Example depricated error, errors not in primary use anymore
