@@ -10,11 +10,24 @@ Fixed 3 critical bugs in the Lexer.
 
 Made basic Code Generation with a preset AST.
 
-# Error Codes
+**20/04/2025**
 
-|Code|Type|Info|
-| --- | --- | --- |
-|E001|Compiler|Example error, might be used for testing
-|E002|Compiler|Unimplemented token found
-|AE00|Alpha|Example alpha error, used for previewing
-|DE00|Depricated|Example depricated error, errors not in primary use anymore
+Junk will be discontinued, I'm extremely happy with the
+
+lessons I've learned from developing this project and
+
+would like to move onto my next project.
+
+Implmenting things ive learnt from this and creating a
+
+cleaner and more complete language will be the goal.
+
+Attempting to learn C and some more complex things.
+
+It was very fun, I believe I learned more from these
+
+10 hours or so over 2 days than I have throughout these
+
+6 or 7 years I've been programming, This will (probably)
+
+be the last commit. It was a good run.
